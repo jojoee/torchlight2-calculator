@@ -33,6 +33,7 @@
     "build": "gulp",
     "build.watch": "gulp && gulp watch",
     "test": "mocha test --reporter spec --recursive",
-    "test.watch": "mocha test --reporter spec --recursive --watch"
+    "test.watch": "mocha test --reporter spec --recursive --watch",
+    "validate": "npm run build && npm run test"
   }
 }

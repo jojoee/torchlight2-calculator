@@ -1,0 +1,11 @@
+language: node_js
+cache: yarn
+node_js:
+  - "6"
+branches:
+  only:
+    - master
+script:
+  - node --version
+  - npm --version
+  - yarn run validate
