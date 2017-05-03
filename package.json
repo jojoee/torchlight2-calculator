@@ -1,0 +1,38 @@
+{
+  "name": "torchlight2-calculator",
+  "description": "Torchlight2 calculator",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jojoee/torchlight2-calculator.git"
+  },
+  "keywords": [
+    "torchlight",
+    "torchlight2",
+    "calculator"
+  ],
+  "author": "Nathachai Thongniran <inid3a@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/jojoee/torchlight2-calculator",
+  "devDependencies": {
+    "browser-sync": "^2.10.1",
+    "chai": "^3.5.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1",
+    "mocha": "^2.5.3"
+  },
+  "scripts": {
+    "build": "gulp",
+    "build.watch": "gulp && gulp watch",
+    "test": "mocha test --reporter spec --recursive",
+    "test.watch": "mocha test --reporter spec --recursive --watch"
+  }
+}

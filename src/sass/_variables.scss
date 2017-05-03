@@ -1,0 +1,43 @@
+$accent-color: #6870ab;
+
+// space
+$space1: 6px;
+$space2: 12px;
+$space3: 18px;
+$space4: 24px;
+$space5: 30px;
+$space6: 36px;
+$space7: 42px;
+$space8: 48px;
+$space9: 54px;
+$space10: 60px;
+$space11: 66px;
+$space12: 72px;
+$space13: 78px;
+$space14: 84px;
+$space15: 90px;
+
+// breakpoint
+// from bootstrap breakpoint
+$screen-xs: 480px !default;
+$screen-xs-min: $screen-xs !default;
+
+$screen-sm: 768px !default;
+$screen-sm-min: $screen-sm !default;
+
+$screen-md: 992px !default;
+$screen-md-min: $screen-md !default;
+
+$screen-lg: 1200px !default;
+$screen-lg-min: $screen-lg !default;
+
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+
+/*
+@media (max-width: $screen-xs-max) { ... }
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { ... }
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) { ... }
+@media (min-width: $screen-lg-min) { ... }
+*/

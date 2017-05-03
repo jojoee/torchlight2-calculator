@@ -1,0 +1,12 @@
+# dependency
+bower_components
+node_modules
+
+# backup
+bk*
+
+# dist
+dist
+
+# log
+*.log
