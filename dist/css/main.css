@@ -1,0 +1,41 @@
+/*
+@media (max-width: $screen-xs-max) { ... }
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { ... }
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) { ... }
+@media (min-width: $screen-lg-min) { ... }
+*/
+body {
+  background-color: #fff;
+}
+
+h1 {
+  color: #6870ab;
+}
+
+#hero-switcher .class {
+  float: left;
+}
+
+#hero-switcher .class .image {
+  width: 115px;
+  height: 115px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+#hero-switcher .class.berserker .image {
+  background-image: url("/asset/berserker/avatar.jpg");
+}
+
+#hero-switcher .class.embermage .image {
+  background-image: url("/asset/embermage/avatar.jpg");
+}
+
+#hero-switcher .class.engineer .image {
+  background-image: url("/asset/engineer/avatar.jpg");
+}
+
+#hero-switcher .class.outlander .image {
+  background-image: url("/asset/outlander/avatar.jpg");
+}

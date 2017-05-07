@@ -5,10 +5,85 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Torchlight 2 Skill & Stat Calculator</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="dist/css/main.css">
 </head>
+<div id="app">
+  <div class="container">
+    <div class="row">
+      <div id="hero-switcher" class="col-md-12 clearfix">
+        <div class="classes">
+
+        </div>
+      </div>
+
+      <div id="hero-meta" class="col-md-12 clearfix">
+        <div class="stat-pont">
+          Stat point: <span xbind="stat">0</span> / 535
+        </div>
+
+        <div class="stat-pont">
+          Skill point: <span xbind="skill">0</span> / 133
+        </div>
+      </div>
+
+      <div id="hero-stat" class="col-md-12 clearfix">
+        <div class="statuses">
+        </div>
+      </div>
+
+      <div id="hero-skill" class="col-md-12 clearfix">
+        <div class="skills">
+        </div>
+      </div>
+
+      <div id="info" class="col-md-12">
+        <div class="title">
+
+        </div>
+
+        <div class="desc">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <body>
-<script src="dist/js/main.min.js"></script>
+<script id="xhhero-class" type="text/x-handlebars-template">
+<div class="class {{id}}">
+  <div class="image">
+
+  </div>
+  <div class="name">
+    {{name}}
+  </div>
+</div>
+</script>
+<script id="xhhero-status" type="text/x-handlebars-template">
+<div class="status {{id}}">
+  <label>{{name}}</label>
+  <input type="range" max="500" min="0" value="0"
+    class="input"
+    xbind-input="{{xbind}}"
+  >
+  <span class="result" xbind="{{xbind}}"></span>
+</div>
+</script>
+<script id="xhhero-skill" type="text/x-handlebars-template">
+<div class="skill {{id}}">
+  <label>{{name}}</label>
+  <input type="range" max="15" min="0" value="0"
+    class="input"
+    xbind-input="{{xbind}}"
+  >
+  <span class="result" xbind="{{xbind}}"></span>
+</div>
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/melanke/Watch.JS/master/src/watch.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+<script src="src/js/main.js"></script>
 </body>
 </html>

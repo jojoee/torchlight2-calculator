@@ -1,9 +1,54 @@
 @import "variables";
 
 body {
-  background-color: #eee;
+  background-color: $white;
 }
 
 h1 {
   color: $accent-color;
+}
+
+#hero-switcher {
+
+  .classes {
+
+  }
+
+  .class {
+    float: left;
+
+    .image {
+      width: 115px;
+      height: 115px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+    }
+
+    &.berserker .image {
+      background-image: url('/asset/berserker/avatar.jpg');
+    }
+
+    &.embermage .image {
+      background-image: url('/asset/embermage/avatar.jpg');
+    }
+
+    &.engineer .image {
+      background-image: url('/asset/engineer/avatar.jpg');
+    }
+
+    &.outlander .image {
+      background-image: url('/asset/outlander/avatar.jpg');
+    }
+
+    .name {
+
+    }
+
+    &.berserker > image {
+
+    }
+
+
+  }
 }

@@ -8,10 +8,15 @@ var uglify        = require('gulp-uglify');
 var jshint        = require('gulp-jshint');
 var sourcemaps    = require('gulp-sourcemaps');
 var autoprefixer  = require('gulp-autoprefixer');
+var gulpif        = require('gulp-if');
 
 var scriptSrcs = [
   './src/js/main.js',
 ];
+
+var enabled = {
+  map: false,
+};
 
 /*================================================================
  # HELPER
@@ -38,13 +43,13 @@ function handleError(err) {
 
 gulp.task('style', function() {
   return gulp.src('./src/sass/*.scss')
-    .pipe(sourcemaps.init())
+    .pipe(gulpif(enabled.map, sourcemaps.init()))
     .pipe(sass({
       'sourceComments': false,
       'outputStyle': 'expanded'
     })).on('error', handleError)
     .pipe(autoprefixer('last 2 versions', '> 1%', 'ie 8'))
-    .pipe(sourcemaps.write('.'))
+    .pipe(gulpif(enabled.map, sourcemaps.write('.')))
     .pipe(gulp.dest('./dist/css'))
     .pipe(browserSync.stream({
       'once': true
@@ -53,19 +58,10 @@ gulp.task('style', function() {
 
 gulp.task('script', ['lint'], function() {
   return gulp.src(scriptSrcs)
-    .pipe(sourcemaps.init())
+    .pipe(gulpif(enabled.map, sourcemaps.init()))
     .pipe(concat('main.js'))
+    .pipe(gulpif(enabled.map, sourcemaps.write('.')))
     .pipe(gulp.dest('./dist/js'))
-    .pipe(uglify({
-      compress: {
-        'drop_debugger': true
-      }
-    })).on('error', handleError)
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('dist/js'))
     .pipe(browserSync.stream({
       'once': true
     }));
@@ -84,10 +80,10 @@ gulp.task('serve', function() {
   });
 
   gulp.watch('./src/sass/*.scss', ['style']);  
-  gulp.watch('./src/js/*.js', ['script']);
+  gulp.watch('./src/js/*.js', { interval: 500 }).on('change', browserSync.reload);
   gulp.watch('./index.html', { interval: 500 }).on('change', browserSync.reload);
 });
 
-gulp.task('build', ['style', 'script']);
+gulp.task('build', ['style']);
 gulp.task('watch', ['serve']);
 gulp.task('default', ['build']);
