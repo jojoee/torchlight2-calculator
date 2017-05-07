@@ -1,0 +1,985 @@
+{
+  "berserker": [
+    {
+      "name": "Hunter",
+      "skills": [
+        {
+          "name": "Eviscerate",
+          "description": "You tear into all enemies directly in front of you, leaving them bleeding for 6 seconds. Base range is 2.7 meters within a 120 degree arc. Eviscerate has a 67% Charge rate penalty.",
+          "tiers": [
+            "Range increased to 3 meters and arc to 180 degrees. Bleeding is amplified over a shorter, 4 second duration",
+            "Range increased to 3.3 meters and arc to 240 degrees. Bleeding amplified over a shorter, 2 second duration",
+            "Range increased to 4 meters"
+          ]
+        },
+        {
+          "name": "Howl",
+          "description": "You howl in fury, filling nearby foes with terror. Affected foes are slowed and become less able to defend themselves for several seconds.",
+          "tiers": [
+            "Range increased to 7.5 meters",
+            "Range increased to 10 meters",
+            "Range increased to 12.5 meters"
+          ]
+        },
+        {
+          "name": "Raze",
+          "description": "You perform a devastating uppercut that inflicts heavy damage on a single target. With each successive hit, you grow in power. Raze does not generate Charge.",
+          "tiers": [
+            "Target is slowed",
+            "Target has decreased attack accuracy",
+            "Target is stunned"
+          ]
+        },
+        {
+          "name": "Wolfstrike",
+          "description": "You lunge forward in a 6 meter dash, claws slashing, rending all foes in your path.",
+          "tiers": [
+            "Lunge distance increased to 7 meters",
+            "Lunge distance increased to 8 meters",
+            "Lunge distance increased to 9 meters"
+          ]
+        },
+        {
+          "name": "Battle Rage",
+          "description": "You enter an enraged state during which your damage is amplified based on the number of foes within 4 meters. The rage lasts for 60 seconds.",
+          "tiers": [
+            "Damage you take is also reduced by foe proximity",
+            "Aura range increases to 5 meters",
+            "Aura range increases to 6 meters"
+          ]
+        },
+        {
+          "name": "Rupture",
+          "description": "You knock a single enemy back with a devastating strike. After a brief delay, the target explodes, damaging all foes within 4 meters.",
+          "tiers": [
+            "Explosion radius increased to 5 meters",
+            "Explosion radius increased to 6 meters",
+            "Explosion radius increased to 7 meters"
+          ]
+        },
+        {
+          "name": "Ravage",
+          "description": "You execute a brutal series of slashes, inflicting three strikes on all foes within 4 meters. Enemy armor is weakened with each strike.",
+          "tiers": [
+            "You are immune to knockback and slowing effects while casting Ravage",
+            "Armor weakness duration is extended to 6 seconds",
+            "Range increased to 5 meters"
+          ]
+        },
+        {
+          "name": "Blood Hunger",
+          "description": "Whenever you land a critical strike with a melee weapon, you draw life essence from the carnage, healing your wounds."
+        },
+        {
+          "name": "Executioner",
+          "description": "Your ferocity in combat enables you to more frequently strike with two weapons at once. When you successfully execute, you gain Charge more quickly for a short period of time."
+        },
+        {
+          "name": "Rampage",
+          "description": "Each enemy you kill with a melee weapon has a chance of spurring you into an adrenaline-fueled rampage.. Faster Attack for 5 seconds. 25% Cast Speed for 5 seconds. 12% Movement Speed for 5 seconds"
+        }
+      ]
+    },
+    {
+      "name": "Tundra",
+      "skills": [
+        {
+          "name": "Frost Breath",
+          "description": "You channel the frigid north winds to unleash a blast of icy breath, which immobilizes enemies and makes them more susceptible to damage. The blast reaches 5 meters at a 90 degree angle.",
+          "tiers": [
+            "Range is increased to 6 meters at a 120 degree angle.",
+            "Range is increased to 7 meters at a 150 degree angle.",
+            "Range is increased to 8 meters at a 150 degree angle. Allows use of health and mana steal abilities."
+          ]
+        },
+        {
+          "name": "Stormclaw",
+          "description": "You imbue your weapons with an electrical energy. This power can cause a lightning bolt to arc toward nearby targets when you strike a foe. The lightning can chain up to 2 times.",
+          "tiers": [
+            "Lightning can chain up to 3 times",
+            "Lightning can chain up to 4 times",
+            "Lightning can chain up to 5 times"
+          ]
+        },
+        {
+          "name": "Storm Hatchet",
+          "description": "You draw wild northern lightning out of your weapon to create an electrical throwing axe with a range of 15 meters.",
+          "tiers": [
+            "Hatchet range is increased to 20 meters and it flies faster",
+            "3 hatchets are thrown at once",
+            "Hatchets shatter shields"
+          ]
+        },
+        {
+          "name": "Northern Rage",
+          "description": "You unleash an arctic blast from deep inside you, throwing out shards of ice to knock back and freeze nearby foes.",
+          "tiers": [
+            "The blast is strengthened to 4 fissures that travel further than the base skill",
+            "The blast is strengthened to 5 fissures that travel further than tier I",
+            "The blast is strengthened to 6 fissures that travel further than tier II"
+          ]
+        },
+        {
+          "name": "Ice Shield",
+          "description": "You call forth an ice shield which reflects projectile missiles back at attackers. You also have a chance to gain 10% of your Charge Bar when the shield is struck. The shield lasts for 10 seconds.",
+          "tiers": [
+            "The shield reflects 75% of the missile damage",
+            "The shield reflects 100% of the missile damage",
+            "The shield reflects 125% of the missile damage"
+          ]
+        },
+        {
+          "name": "Permafrost",
+          "description": "The bone-cracking cold of the north expands outward from you, slowly sapping the life of all foes within 16 meters.",
+          "tiers": [
+            "Adds a 25% chance to Freeze foes for 6 seconds",
+            "Adds a 25% chance to completely immobilize foes for 6 seconds",
+            "Chance to immobilize foes is increased to 50%"
+          ]
+        },
+        {
+          "name": "Glacial Shatter",
+          "description": "The earth is sundered and 5 geysers burst forth at the target location, blinding and damaging foes with superheated air and water.",
+          "tiers": [
+            "7 geysers are created",
+            "Foes are also ignited",
+            "9 geysers are created"
+          ]
+        },
+        {
+          "name": "Cold Steel Mastery",
+          "description": "The only thing harder than steel is cold steel. Increases melee and frost damage."
+        },
+        {
+          "name": "Shatter Storm",
+          "description": "When you kill frozen enemies, you blast nearby foes in a 4 meter ring of frost, leaving them more susceptible to further ice attacks."
+        },
+        {
+          "name": "Rage Retaliation",
+          "description": "When you are struck by a nearby enemy, your inner rage physically manifests and retaliates against that foe. Damage is equal to 120% of your weapon's DPS. Individual targets can only be hit once per second at most."
+        }
+      ]
+    },
+    {
+      "name": "Shadow",
+      "skills": [
+        {
+          "name": "Shadow Burst",
+          "description": "You transform into a spectral wolf and lunge through your enemies, damaging them even as you heal your own body. The healing is limited to a maximum of 2 targets per Burst.",
+          "tiers": [
+            "Healing can be derived from 3 targets per Burst. Chance to destroy shields is increased to 50%.",
+            "Healing can be derived from 4 targets per Burst. Chance to destroy shields is increased to 75%.",
+            "Healing can be derived from 5 targets per Burst. Chance to destroy shields is increased to 100%."
+          ]
+        },
+        {
+          "name": "Wolf Shade",
+          "description": "You summon a Wolf Shade ally to sink its icy fangs into your enemies and heal you with their lifeforce. The Shade can be summoned once every minute.",
+          "tiers": [
+            "Summoning duration increased to 30 seconds",
+            "Summoning duration increased to 45 seconds",
+            "Summoning duration increased to 1 minute"
+          ]
+        },
+        {
+          "name": "Shadowbind",
+          "description": "You bind a group of foes within a 5 meter radius of your target location. All your subsequent melee attacks transfer a percentage of damage to all shadowbound targets.",
+          "tiers": [
+            "Radius of effect increased to 7 meters",
+            "Radius of effect increased to 9 meters",
+            "Radius of effect increased to 11 meters"
+          ]
+        },
+        {
+          "name": "Savage Rush",
+          "description": "The shadow wolf spirit overtakes you! While the skill remains active, you dash continuously through foes, leaving them bleeding in your wake.",
+          "tiers": [
+            "Enemy Armor decreased by 20% for 6 seconds",
+            "Enemy Armor decreased by 30% for 8 seconds",
+            "Enemy Armor decreased by 40% for 10 seconds"
+          ]
+        },
+        {
+          "name": "Chain Snare",
+          "description": "Spearing all enemies within 6 meters, you draw them swiftly into melee range.",
+          "tiers": [
+            "Stun duration increased to 2 seconds",
+            "Range increased  to 9 meters",
+            "Shatters shields"
+          ]
+        },
+        {
+          "name": "Battle Standard",
+          "description": "The ancient standard of your tribe imbues you and your allies with increased evasion, resistance to knockback, and increased charge gain while within its 9 meter influence.",
+          "tiers": [
+            "Increased mana recharge",
+            "Influence range increased to 15 meters",
+            "Standard duration doubled"
+          ]
+        },
+        {
+          "name": "Wolfpack",
+          "description": "You unleash a pack of 5 spectral wolves that spread out and attack enemies all around you.",
+          "tiers": [
+            "Wolves can strike multiple targets",
+            "2 additional wolves appear",
+            "Mana cost decreased"
+          ]
+        },
+        {
+          "name": "Frenzy Mastery",
+          "description": "Your feral nature grows more powerful and harder to suppress, increasing the duration of your Frenzy states (acquired from filling the Charge Bar)."
+        },
+        {
+          "name": "Shred Armor",
+          "description": "Your inner savagery rips into your enemies' armor, leaving them more vulnerable with each hit, while at the same time stealing some of their armor for yourself."
+        },
+        {
+          "name": "Red Wolf",
+          "description": "Whenever you inflict a critical hit, up to two neighboring enemies may be savaged by a manifestation of your bloodlust."
+        }
+      ]
+    }
+  ],
+  "embermage": [
+    {
+      "name": "Inferno",
+      "skills": [
+        {
+          "name": "Magma Spear",
+          "description": "You fire a channeled barrage of magma, piercing foes and setting them aflame. Range is 16 meters.",
+          "tiers": [
+            "Range extended to 24 meters",
+            "Burn time increased to 6 seconds",
+            "Magma Spears ricochet"
+          ]
+        },
+        {
+          "name": "Magma Mace",
+          "description": "You summon an enormous mace of fire that channels the energy of your weapons, stunning foes in a 5 meter arc and setting them ablaze. Magma Mace does not build Charge.",
+          "tiers": [
+            "Magma Mace has a 25% chance to break shields",
+            "Hit slows enemy attacks by 33% for 3 seconds",
+            "Hit slows enemy attacks by 67% for 3 seconds"
+          ]
+        },
+        {
+          "name": "Firebombs",
+          "description": "You hurl three gouts of flame that ignite the ground for 3 seconds and sometimes cause foes to stumble in panic as they burn. Firebombs gain no Charge.",
+          "tiers": [
+            "Pools of flame last 4 seconds. Cooldown time reduced to 1.6 seconds.",
+            "Pools of flame last 5 seconds. Cooldown time reduced to 1.2 seconds.",
+            "Pools of flame last 6 seconds. Cooldown time reduced to .8 seconds."
+          ]
+        },
+        {
+          "name": "Blazing Pillar",
+          "description": "You create 4 giant pillars of intense flame that seek out and immolate nearby foes. Blazing Pillar is good at building Charge.",
+          "tiers": [
+            "5 pillars of flame are created",
+            "6 pillars of flame are created",
+            "7 pillars of flame are created"
+          ]
+        },
+        {
+          "name": "Infernal Collapse",
+          "description": "You create a concentrated sphere of heat, which suddenly expands outward in a devastating 4 meter blast.",
+          "tiers": [
+            "Blast radius increased to 5 meters. Increased Knockback.",
+            "Blast radius increased to 6 meters. Increased Knockback.",
+            "Blast radius increased to 7 meters. Increased Knockback."
+          ]
+        },
+        {
+          "name": "Immolation Aura",
+          "description": "A vortex of flame surrounds you, damaging foes within a 3 meter radius.",
+          "tiers": [
+            "The aura absorbs 5% of all incoming damage",
+            "The aura absorbs 10% of all incoming damage",
+            "The aura absorbs 15% of all incoming damage"
+          ]
+        },
+        {
+          "name": "Firestorm",
+          "description": "You call down burning cinders from the sky over a 15 meter radius, setting foes alight and increasing their susceptability to fire damage. Firestorm gains no Charge.",
+          "tiers": [
+            "Enemies do 30% less fire damage when affected",
+            "Targets killed emit burning splinters",
+            "Burning splinter range doubled"
+          ]
+        },
+        {
+          "name": "Charge Mastery",
+          "description": "Your expertise with Charge lets you gain it faster, and retain it longer."
+        },
+        {
+          "name": "Elemental Attunement",
+          "description": "The Embermage is finely attuned to the elements, inflicting elemental effects on nearby enemies and extending the duration of all elemental effects."
+        },
+        {
+          "name": "Fire Brand",
+          "description": "When you hit a burning enemy, you do an additional burst of fire damage."
+        }
+      ]
+    },
+    {
+      "name": "Frost",
+      "skills": [
+        {
+          "name": "Icy Blast",
+          "description": "You unleash a hail of 5 ricocheting icy bolts to slow and immobilize your foes. ",
+          "tiers": [
+            "Target's Damage is reduced by 20% for 6 seconds",
+            "Chance to Immobilize increased to 75% over 4 seconds",
+            "Increases to 7 bolts over a wider arc"
+          ]
+        },
+        {
+          "name": "Hailstorm",
+          "description": "You call down shards of ice from the sky, pummeling foes within a 15 meter radius. Hailstorm gains no Charge.",
+          "tiers": [
+            "Targets become 20% more susceptible to Ice and Electric damage for 6 seconds",
+            "Targets become 40% more susceptible to Ice and Electric damage for 6 seconds",
+            "Targets become 60% more susceptible to Ice and Electric damage for 6 seconds"
+          ]
+        },
+        {
+          "name": "Frost Phase",
+          "description": "You vanish from one location and instantly reappear in another, dealing cold damage in both places within a 2.5 meter burst.",
+          "tiers": [
+            "Burst radius increased to 3.75 meters",
+            "Burst radius increased to 5 meters",
+            "Burst radius increased to 6.25 meters"
+          ]
+        },
+        {
+          "name": "Elemental Boon",
+          "description": "You imbue yourself with a bolstering aura which increases your elemental damages and resistances. Boon's benefits are also applied to any allies within 12 meters.",
+          "tiers": [
+            "Gains resistance to slowing and immobilization effects",
+            "Gains mana recharge",
+            "Faster cast and less mana"
+          ]
+        },
+        {
+          "name": "Frost Wave",
+          "description": "You hurl forth a wave of ice shards, impaling and freezing foes in its path.",
+          "tiers": [
+            "A spread of 3 frost waves are released",
+            "Frost wave speed increases",
+            "A spread of 5 frost waves are released"
+          ]
+        },
+        {
+          "name": "Ice Prison",
+          "description": "You summon pillars of ice around a target, trapping it within. You, however, can pass through the barrier. Pillars reflect damage back at foes attacking them.",
+          "tiers": [
+            "Ice pillars inflict damage when shattering",
+            "Foes within the prison are damaged over time",
+            "Cooldown reduced to 2 seconds."
+          ]
+        },
+        {
+          "name": "Astral Ally",
+          "description": "You summon an astral clone of a fellow Embermage, who joins you in battle with powerful spells.",
+          "tiers": [
+            "The Astral Ally lasts for 30 seconds",
+            "The Astral Ally lasts for 40 seconds",
+            "The Astral Ally lasts for 50 seconds"
+          ]
+        },
+        {
+          "name": "Staff Mastery",
+          "description": "Your skill with staves lowers the elemental resistances of enemies when you strike them. These effects are also applied to the Magma Mace, Magma Spear, Icy Blast and Shockbolts skills."
+        },
+        {
+          "name": "Frozen Fate",
+          "description": "When you kill an enemy, you have chance to freeze up to 4 additional enemies within a 7 meter radius."
+        },
+        {
+          "name": "Ice Brand",
+          "description": "When you hit a frozen enemy, you do an additional burst of ice damage."
+        }
+      ]
+    },
+    {
+      "name": "Storm",
+      "skills": [
+        {
+          "name": "Prismatic Bolt",
+          "description": "You unleash a flurry of 5 prismatic bolts that seek out nearby foes.",
+          "tiers": [
+            "Damage increased by 10%",
+            "Damage increased by 20%",
+            "Damage increased by 30%"
+          ]
+        },
+        {
+          "name": "Shocking Burst",
+          "description": "You unleash channeled bursts of crackling energy, shocking and stunning all foes up to 8 meters away in a 75 degree angle.The energy burst continues and drains mana while the mouse button is held down.",
+          "tiers": [
+            "Arc widened to 105 degrees",
+            "Arc widened to 135 degrees",
+            "Arc widened to 165 degrees"
+          ]
+        },
+        {
+          "name": "Thunder Locus",
+          "description": "You summon a concentrated thunderstorm at a target location, which blasts foes within 7 meters for the duration of its existence. Thunder Locus does not build Charge.",
+          "tiers": [
+            "The Locus can blast two foes at once",
+            "The Locus can blast three foes at once",
+            "The Locus can blast four foes at once"
+          ]
+        },
+        {
+          "name": "Arc Beam",
+          "description": "You pierce your foes with a channeled beam of energy from your weapons. Destroyed enemies split the beam and strike nearby targets as a secondary effect.",
+          "tiers": [
+            "The beam can split to new targets up to 3 times",
+            "The beam can split to new targets up to 4 times",
+            "The beam can split to new targets up to 5 times"
+          ]
+        },
+        {
+          "name": "Death's Bounty",
+          "description": "You bind the lifeforce of all foes within 6 meters of the target. Upon their death, their life and mana are drawn to you or other players through 3 soul bolts. Stated health and mana recovery is per soul bolt.",
+          "tiers": [
+            "4 soul bolts are released and enemies are slowed for 2 seconds",
+            "5 soul bolts are released and casting speed is increased by 50%",
+            "6 soul bolts are released and enemies are stunned for 1 second"
+          ]
+        },
+        {
+          "name": "Shockbolts",
+          "description": "You release 4 electrically charged bolts, which follow the ground and ricochet off neighboring objects",
+          "tiers": [
+            "Bolts have a 10% chance to immobilize",
+            "Bolts increase in speed",
+            "Increases to 5 bolts at launch"
+          ]
+        },
+        {
+          "name": "Shocking Orb",
+          "description": "You release a slow-moving electrical orb, which discharges energy into foes as it passes",
+          "tiers": [
+            "3 Orbs are released",
+            "Orbs ricochet",
+            "Discharge range increased 50%"
+          ]
+        },
+        {
+          "name": "Prismatic Rift",
+          "description": "Your chaotic energy teleports enemies away when they strike you, with a chance of random elemental effects."
+        },
+        {
+          "name": "Wand Chaos",
+          "icons": {
+            "inactive": {
+              "xPos": "397",
+              "yPos": "67"
+            },
+            "active": {
+              "xPos": "1",
+              "yPos": "133"
+            }
+          },
+          "description": "Attacks using your wand can result in bizarre, random elemental disturbances. These effects can also happen with the Magma Mace, Magma Spear, Icy Blast and Shockbolts skills."
+        },
+        {
+          "name": "Lightning Brand",
+          "description": "When you hit a shocked enemy, you do an additional burst of lightning damage."
+        }
+      ]
+    }
+  ],
+  "engineer": [
+    {
+      "name": "Blitz",
+      "skills": [
+        {
+          "name": "Flame Hammer",
+          "description": "Your weapon crushes foes it strikes, creating 4 flaming splinters that seek out enemies within 5 meters. If available, a Charge is consumed to generate two additional blasts.",
+          "tiers": [
+            "Creates 5 flaming splinters travelling 8 meters",
+            "Creates 6 flaming splinters travelling 11 meters",
+            "Creates 7 flaming splinters travelling 14 meters"
+          ]
+        },
+        {
+          "name": "Seismic Slam",
+          "description": "Your mechanically-assisted stomp stuns and burns all enemies in a 4 meter radius around you.",
+          "tiers": [
+            "Radius increased to 6 meters",
+            "Radius increased to 8 meters",
+            "Radius increased to 10 meters"
+          ]
+        },
+        {
+          "name": "Ember Hammer",
+          "description": "You deliver a powerful sidelong swing which channels ember energy into a wide, 270 degree arc, destroying shields. Ember Hammer does not gain Charge.",
+          "tiers": [
+            "Damage is amplified by 5% for every Charge",
+            "Damage is amplified by 10% for every Charge",
+            "Damage is amplified by 15% for every Charge"
+          ]
+        },
+        {
+          "name": "Onslaught",
+          "description": "You leap forward, slamming your melee weapon into the ground. Foes at the point of impact are damaged and slowed significantly. Onslaught gains half of normal Charge.",
+          "tiers": [
+            "Mana cost reduced by 20%",
+            "Mana cost reduced by 40%",
+            "Mana cost reduced by 60%"
+          ]
+        },
+        {
+          "name": "Ember Reach",
+          "description": "A focused surge of energy draws a foe into striking range. You gain a 20% chance to stun for 3 seconds for every Charge you have, but the skill itself neither gains nor expends Charge. ",
+          "tiers": [
+            "Mana cost reduced by 20%. Damage Taken effect lasts 4 seconds.",
+            "Mana cost reduced by 40%. Damage Taken effect lasts 6 seconds.",
+            "Mana cost reduced by 60%. Damage Taken effect lasts 8 seconds."
+          ]
+        },
+        {
+          "name": "Storm Burst",
+          "description": "A blast from your pack rockets you swiftly forward, knocking back foes. 3 bolts of energy discharge from your suit on impact, striking remote enemies. Every enemy hit also recharges your mana by 5%, for up to 5 targets.",
+          "tiers": [
+            "Increases bolt discharge to 6",
+            "20% chance to immobilize foes",
+            "Cooldown reduced to 1 second"
+          ]
+        },
+        {
+          "name": "Emberquake",
+          "description": "A huge overhand smash sends out 8 radiating magma fissures to seek and destroy your enemies.",
+          "tiers": [
+            "Fire damage increased by 20%",
+            "Fire damage increased by 40%",
+            "Fire damage increased by 60%"
+          ]
+        },
+        {
+          "name": "Heavy Lifting",
+          "description": "Your skill with giant weaponry allows you to attack faster and adds a chance to stun your foes."
+        },
+        {
+          "name": "Supercharge",
+          "description": "When you hit foes with a melee weapon, you have a chance to direct excess energy into your weapon and then discharge it during attacks over the next 10 seconds. While supercharged you gain additional Charge."
+        },
+        {
+          "name": "Coup-de-Grace",
+          "description": "When you hit a stunned target, an electrical surge helps finish the foe off. This ability cannot trigger more than one time per second."
+        }
+      ]
+    },
+    {
+      "name": "Construction",
+      "skills": [
+        {
+          "name": "Healing Bot",
+          "description": "You deploy a small drone that generates energy pulses, healing both you and your allies.",
+          "tiers": [
+            "The energy pulse also regenerates Mana",
+            "The Engineer and allies also get a 8% Armor boost",
+            "The Engineer and allies also get a 16% Armor boost"
+          ]
+        },
+        {
+          "name": "Blast Cannon",
+          "description": "You fire a long-range, piercing projectile from your cannon. At higher ranks, the blast leaves foes more susceptible to further fire and physical damage.",
+          "tiers": [
+            "25% chance to Blind foes for 4 seconds",
+            "50% chance to Blind foes for 4 seconds",
+            "75% chance to Blind foes for 4 seconds"
+          ]
+        },
+        {
+          "name": "Spider Mines",
+          "description": "You deploy a trio of spider drones that charge the nearest foes and explode in a 3 meter radius. Upgraded mines do 20% more damage with a 5 meter radius, a 2 second stun, and electric damage over time.",
+          "tiers": [
+            "Mana cost reduced by 20%",
+            "Mana cost reduced by 40%",
+            "Mana cost reduced by 60%"
+          ]
+        },
+        {
+          "name": "Gun Bot",
+          "description": "You deploy a small drone that assaults your enemies with a hail of gunfire, firing 5 rounds per second. Each rank increases the bot's damage potential.",
+          "tiers": [
+            "Firing range doubled. Summoning cooldown reduced to 2.5 minutes",
+            "Shots pierce enemies. Summoning cooldown reduced to 2 minutes",
+            "Triple-spread shots. Summoning cooldown reduced to 1.5 minutes"
+          ]
+        },
+        {
+          "name": "Shock Grenade",
+          "description": "You lob a grenade, which shocks and stuns enemies in a 4 meter radius. Consumes one Charge for two additional grenades.",
+          "tiers": [
+            "Grenade shock radius grows to 5 meters",
+            "Grenade stun time increased to 5 seconds",
+            "Grenade shock radius grows to 6 meters and stun time increased to 6 seconds"
+          ]
+        },
+        {
+          "name": "Fusillade",
+          "description": "You unleash a continuous barrage of long-range, homing rockets from your cannon. Bursts of 2 rockets keep firing as long as the mouse button is held down.",
+          "tiers": [
+            "3 rockets are released per burst",
+            "Rockets detonate in a 3 meter burst",
+            "4 rockets are released per burst"
+          ]
+        },
+        {
+          "name": "Sledgebot",
+          "description": "You construct a powerful Sledgebot to pulverize your foes.",
+          "tiers": [
+            "Sledgebot gains sweep attack",
+            "Sledgebot gains smash attack",
+            "Sledgebot gains rocket attack"
+          ]
+        },
+        {
+          "name": "Bulwark",
+          "description": "Your expertise with armor lets you get the most out of it, increasing its effectiveness, and reducing any damage that actually gets through."
+        },
+        {
+          "name": "Fire and Spark",
+          "description": "The spark to make things work ... and fire to make things die.. Each level adds 5% to all fire and electric-based damage inflicted by the Engineer."
+        },
+        {
+          "name": "Charge Domination",
+          "description": "When you slay an enemy, you have a chance to absorb enough energy to fill your Charge bar. This ability cannot trigger more often than once every three seconds."
+        }
+      ]
+    },
+    {
+      "name": "Aegis",
+      "skills": [
+        {
+          "name": "Shield Bash",
+          "description": "You smash enemies in front of you, stunning them, slowing their attacks and knocking them back. Damage is equal to 5 times your shield's Armor value. Each Charge you currently have provides an additional 10% damage bonus. ",
+          "tiers": [
+            "Damage is increased to 7.5 times your Shield's Armor",
+            "Damage is increased to 10 times your Shield's Armor",
+            "Damage is increased to 12.5 times your Shield's Armor"
+          ]
+        },
+        {
+          "name": "Forcefield",
+          "description": "Your armor projects Ember energy, creating a forcefield around you, and a half-strength forcefield around allies. Once the forcefield absorbs its maximum damage it dissipates, removing all benefits.. Forcefield uses all available Charges to increase damage absorbtion by 50% per Charge.",
+          "tiers": [
+            "Mana cost and casting time are reduced by 20%",
+            "Allies receive a full strength shield",
+            "Mana cost and casting time are reduced by 50%"
+          ]
+        },
+        {
+          "name": "Overload",
+          "description": "You overload your armor's circuits to project a nova of Ember energy, electrocuting up to 5 foes in a 6 meter radius around you. Overload uses all available Charges to increase its damage by 50% per Charge.",
+          "tiers": [
+            "Up to 7 foes in an 8 meter radius are electrocuted",
+            "Up to 9 foes in a 10 meter radius are electrocuted",
+            "Up to 11 foes in a 12 meter radius are electrocuted"
+          ]
+        },
+        {
+          "name": "Dynamo Field",
+          "description": "You tap into your armor's energy to project an electrical burst in a 5 meter radius. This electrical surge generates charge for each enemy that is struck, up to five per field.",
+          "tiers": [
+            "Field radius increased to 7 meters. Interrupt chance increased to 70%.",
+            "Field radius increased to 9 meters. Interrupt chance increased to 90%.",
+            "Field radius increased to 11 meters. Interrupt chance increased to 110%."
+          ]
+        },
+        {
+          "name": "Tremor",
+          "description": "Discharging the energy from your suit into the earth causes a massive shockwave to expand outward, knocking back and weakening foes within 24 meters. Tremor only does the listed damage when it uses one Charge.",
+          "tiers": [
+            "Adds a 20% chance for foes to Flee for 10 seconds",
+            "Weakened foes also do 20% less physical damage",
+            "All targets are stunned for 2 seconds"
+          ]
+        },
+        {
+          "name": "Fire Bash",
+          "description": "You channel a potent blast of energy through your shield up to 6 meters away. Damage is derived from your shield's Armor value. Initial physical damage is tripled and the blast range is increased to 9 meters with one Charge. ",
+          "tiers": [
+            "Burn time increased to 5 seconds, doing more damage",
+            "Damage arc widened by 40 degrees to hit more targets",
+            "Targets take 50% additional fire damage while burning"
+          ]
+        },
+        {
+          "name": "Immobilization Copter",
+          "description": "You deploy an immobilization drone which slows enemies within range of its beam. A maximum of 3 targets may be effected at once.",
+          "tiers": [
+            "A maximum of 5 targets may be affected at once",
+            "Electrical damage inflicted while slowed",
+            "Targets are intermittently interrupted "
+          ]
+        },
+        {
+          "name": "Sword and Board",
+          "description": "Your skill with a shield goes beyond \"defense\" and straight to \"offense,\" adding some of your shield's armor value directly to your melee attacks as physical damage."
+        },
+        {
+          "name": "Aegis of Fate",
+          "description": "When foes attack you, your armor has a chance to generate a defensive \"bubble\" around you that prevents further damage. The amount of damage this shield can absorb is equal to 200% of your Armor plus 100. While the Aegis is active, you also get 50% Knockback Resistance."
+        },
+        {
+          "name": "Charge Reconstitution",
+          "description": "When you use Charge for skills, you regain some of your Health."
+        }
+      ]
+    }
+  ],
+  "outlander": [
+    {
+      "name": "Warfare",
+      "skills": [
+        {
+          "name": "Rapid Fire",
+          "description": "You fire a rapid burst of projectiles that force enemies back and strip away their armor. The intial range is 7 meters.",
+          "tiers": [
+            "Errant shots are added every other shot",
+            "Range extended to 12 meters",
+            "Targets are ignited for 4 seconds"
+          ]
+        },
+        {
+          "name": "Rune Vault",
+          "description": "You vault swiftly backward, away from your target. This vault leaves behind a mystic sigil that damages and blinds foes in a 4 meter radius.",
+          "tiers": [
+            "Sigil radius extended to 5 meters. Blindness extended to 4 seconds. Allows use of health and mana steal abilities.",
+            "Knockback added. Blindness extended to 5 seconds. Allows use of all weapon-based abilities.",
+            "Radius extended to 6 meters. Blindness extended to 6 seconds. Builds Charge."
+          ]
+        },
+        {
+          "name": "Chaos Burst",
+          "description": "You fire a trio of chaotic, ricocheting projectiles.",
+          "tiers": [
+            "Missile speed increased 50%",
+            "Missiles have a 30% chance to poison their target",
+            "2 additional missiles per burst"
+          ]
+        },
+        {
+          "name": "Cursed Daggers",
+          "description": "You fling 9 piercing daggers in a wide arc, which poison and cripple many foes at once, reducing the damage they deal.",
+          "tiers": [
+            "Number of daggers increased to 11. You gain .5% increased move speed per enemy hit for 4 seconds.",
+            "Number of daggers increased to 13. You gain .5% critical hit chance per enemy hit for 4 seconds.",
+            "Number of daggers increased to 15. You gain .5% critical hit chance per enemy hit for 4 seconds."
+          ]
+        },
+        {
+          "name": "Vortex Hex",
+          "description": "You summon a fetish which draws nearby foes toward it and has a chance to stun them. A maximum of 3 foes may be drawn at one time.  Max stun chance of 8%.",
+          "tiers": [
+            "Foes are damaged when drawn",
+            "Up to five foes can be drawn at one time",
+            "Drawn foes transfer Mana to caster"
+          ]
+        },
+        {
+          "name": "Shattering Glaive",
+          "description": "You hurl a throwing glaive, which shatters on impact, damaging and slowing all foes within 4.5 meters.",
+          "tiers": [
+            "Adds a 25% chance that targets will flee for 3 seconds",
+            "Detonation size increased to 6 meters",
+            "Fire trails emanate from the point of detonation"
+          ]
+        },
+        {
+          "name": "Venemous Hail",
+          "description": "You fire a flurry of poisonous bolts skyward, which streak to earth in a 4 meter radius around the target location. The hail hits with 8 waves per flurry.",
+          "tiers": [
+            "Impact radius increased to 5.5 meters",
+            "Duration of flurry increased to 12 waves",
+            "Shatters shields"
+          ]
+        },
+        {
+          "name": "Long Range Mastery",
+          "description": "Your expertise increases damage with all ranged weapons. Bows, crossbows, pistols and wands have increased firing distance."
+        },
+        {
+          "name": "Shotgonne Mastery",
+          "description": "Your expertise with shotgonnes increases the chance that your blasts shock and disorient your targets."
+        },
+        {
+          "name": "Akimbo",
+          "description": "Your skill with pistols enables you to deal more damage when wielding two at once and occasionally fire both simultaneously... to deadly effect."
+        }
+      ]
+    },
+    {
+      "name": "Lore",
+      "skills": [
+        {
+          "name": "Glaive Throw",
+          "description": "You hurl a throwing glaive, slicing through your target, rebounding once to strike additional foes, and generating extra Charge.",
+          "tiers": [
+            "The Glaive rebounds 2 times",
+            "The Glaive rebounds 3 times",
+            "The Glaive rebounds 4 times"
+          ]
+        },
+        {
+          "name": "Tangling Shot",
+          "description": "You fire a cursed projectile that binds and immobilizes your target. Enemies within a 3.5 meter radius of your target have a secondary chance of also being entangled. Entangled foes are slowly crushed, taking damage over time.",
+          "tiers": [
+            "Secondary radius extended to 4.5 meters, and immobilize chance raised to 65%",
+            "Secondary radius extended to 5.5 meters, and immobilize chance raised to 80%",
+            "Secondary radius extended to 6.5 meters, and immobilize chance raised to 95%"
+          ]
+        },
+        {
+          "name": "Glaive Sweep",
+          "description": "You sweep your glaive in a 360 degree arc, knocking back and stunning foes within 4 meters, while generating additional Charge for each enemy struck.",
+          "tiers": [
+            "Targets bleed",
+            "Range increased to 5.5 meters",
+            "Stun chance increased to 95%"
+          ]
+        },
+        {
+          "name": "Sandstorm",
+          "description": "You hurl your glaive, generating a whirlwind that cuts through foes and saps their health. The sandstorm travels 20 meters and generates 1.5% of your charge bar Charge for every enemy hit.",
+          "tiers": [
+            "Killed foes emit clouds of plague flies",
+            "Range extended to 40 meters",
+            "Range extended to 50 meters"
+          ]
+        },
+        {
+          "name": "Bramble Wall",
+          "description": "You call forth a wall of thorned vines that prevent foes from approaching",
+          "tiers": [
+            "Vines damage foes when raised",
+            "Vine length increased",
+            "Vines exude a poison gas"
+          ]
+        },
+        {
+          "name": "Burning Leap",
+          "description": "You execute a fiery, spinning leap, up to 7 meters forward. Any foes hit along the way are knocked back and set aflame.",
+          "tiers": [
+            "10% faster to cast and range extended to 9 meters",
+            "20% faster to cast and range extended to 11 meters",
+            "30% faster to cast and range extended to 13 meters"
+          ]
+        },
+        {
+          "name": "Flaming Glaive",
+          "description": "You hurl two flaming glaives that circle outward in concentric rings, slashing all foes in range and setting them alight.",
+          "tiers": [
+            "Glaive size increased, allowing it to strike more accurately",
+            "Struck enemies are 30% more vulnerable to Fire and Poison damage",
+            "Struck enemies are 45% more vulnerable to Fire and Poison Damage"
+          ]
+        },
+        {
+          "name": "Dodge Mastery",
+          "description": "Your acrobatic training increases your odds of dodging a blow."
+        },
+        {
+          "name": "Poison Burst",
+          "description": "You coat your weapons with a venomous agent. If an enemy is killed, there is a chance it will explode in a 6 meter cloud of poison, damaging enemies that come into contact with it."
+        },
+        {
+          "name": "Share the Wealth",
+          "description": "You share a percentage of your Charge benefits with all pets and allies within 16 meters, and you gain the same percentage as an additional bonus to your own benefits."
+        }
+      ]
+    },
+    {
+      "name": "Sigil",
+      "skills": [
+        {
+          "name": "Blade Pact",
+          "description": "You invoke an ancient curse that slows your foes and undermines their defenses. The Blade Pact lasts for seven seconds, and any enemy passing through the pact's area suffers the effects for the listed duration.",
+          "tiers": [
+            "The pact lasts for 9 seconds",
+            "The pact lasts for 11 seconds",
+            "The pact lasts for 13 seconds"
+          ]
+        },
+        {
+          "name": "Shadowshot",
+          "description": "You curse your ammunition, causing it to split into 3 shards upon impact, which seek additional targets.",
+          "tiers": [
+            "Ammo splits into 4 shards",
+            "Ammo splits into 5 shards",
+            "Ammo splits into 6 shards"
+          ]
+        },
+        {
+          "name": "Bane Breath",
+          "description": "A blast of cursed breath poisons enemies. If they are killed, they are converted into Shadowling Fiends that fight for you for ten seconds. Note that the Death Ritual skill improves all Shadowling summon duration and attack power.",
+          "tiers": [
+            "Shadowlings move and attack 10% faster",
+            "Shadowlings move and attack 20% faster",
+            "Shadowlings move and attack 30% faster"
+          ]
+        },
+        {
+          "name": "Repulsion Hex",
+          "description": "You summon a floating hex avatar, which repulses enemies who draw too near.",
+          "tiers": [
+            "The hex has a 10% chance to cause enemies to flee for 5 seconds",
+            "The hex has a 20% chance to cause enemies to flee for 5 seconds",
+            "The hex has a 30% chance to cause enemies to flee for 5 seconds"
+          ]
+        },
+        {
+          "name": "Stone Pact",
+          "description": "You invoke an ancient curse that protects you and your allies from physical and elemental damage and reflects some damage back on your attackers. The Stone Pact lasts for twenty seconds, and any ally passing through the pact's area benefits from its effects for the listed duration.",
+          "tiers": [
+            "The pact reflects 25% of damage back at attacking monsters",
+            "The pact reflects 50% of damage back at attacking monsters",
+            "The pact reflects 75% of damage back at attacking monsters"
+          ]
+        },
+        {
+          "name": "Shadowmantle",
+          "description": "You call forth a shadow hex protecting you from ranged attackers. The shadowmantle can reflect damage back to the attackers, and it has a chance to blind them for 6 seconds.",
+          "tiers": [
+            "The hex reflects 125% of the missile damage",
+            "The hex reflects 175% of the missile damage",
+            "The hex reflects 250% of the missile damage"
+          ]
+        },
+        {
+          "name": "Shadowling Brute",
+          "description": "You call forth a terrifying Shadowling Brute at the target location, which lays waste to your enemies.",
+          "tiers": [
+            "Brute gains dash attack",
+            "Brute gains leap attack",
+            "Brute attack rate is increased 30%"
+          ]
+        },
+        {
+          "name": "Master of the Elements",
+          "description": "Your expertise with the elements allows you to deal more damage with them. Poison receives twice the benefit of the other elements."
+        },
+        {
+          "name": "Shadowling Ammo",
+          "description": "You curse your ammunition, causing it to split into 3 shards upon impact, which seek additional targets.",
+          "tiers": [
+            "Ammo splits into 4 shards",
+            "Ammo splits into 5 shards",
+            "Ammo splits into 6 shards"
+          ]
+        },
+        {
+          "name": "Death Ritual",
+          "description": "Your Shadowling allies last longer and deal more damage."
+        }
+      ]
+    }
+  ]
+}
