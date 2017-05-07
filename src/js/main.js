@@ -222,7 +222,7 @@ function init() {
   resetScope();
 }
 
-$.getJSON('/asset/skill.json', function(data) {
+$.getJSON(location.href + 'asset/skill.json', function(data) {
   Skills = data;
   init();
 });
