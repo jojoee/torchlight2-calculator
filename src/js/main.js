@@ -318,3 +318,12 @@ $.getJSON(location.origin + '/asset/skill.json', function(data) {
     init();
   });
 });
+
+// serviceWorker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('/src/js/service-worker.js')
+    .then(function() {
+      console.log('Service Worker Registered');
+    });
+}
