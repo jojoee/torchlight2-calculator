@@ -4,20 +4,18 @@
 Torchlight2 calculator
 
 ## Note
-- Level: 100
-- Fame: Unattainable
-- Stat points: 535
-- Skill points: 133
+- Level: `100`
+- Fame: `Unattainable`
+- Stat points: `535`
+- Skill points: `133`
 
 ## Note (dev)
-- Xbind prefix: x
-- Xbind-input prefix: xi
-- Template prefix: xh
+- Template prefix: `xh`
 - 2 way data binding design
 - Reactive design
-- Maximum skill points: 133 [Ref 1](http://gaming.stackexchange.com/questions/85455/maximum-number-of-skill-points-you-can-have-in-torchlight-2)
+- Maximum skill points: `133`, [ref 1](http://gaming.stackexchange.com/questions/85455/maximum-number-of-skill-points-you-can-have-in-torchlight-2)
 - `caches` for `ServiceWorker`
-- `localforage` for current data
+- `localforage` for `Scope` data
 
 ## Issue
 ```
@@ -32,7 +30,7 @@ Scope only
 ## Update
 - [ ] Coverage
 - [x] Support PWA (Progressive web app)
-- [x] Browser compatibility testing
+- [x] Browser compatibility
 - [ ] Unit test
 - [ ] E2E test
 - [x] Lint
@@ -45,7 +43,7 @@ Scope only
 - [ ] Query string for class / stat / skill
 - [ ] Responsive
 - [ ] Fix all hacks
-- [x] `manifest.json`
+- [ ] `manifest.json`
 - [ ] Update `skill.json`
 - [ ] Replace `bootstrap-grid` css with some source instead of github raw content
 - [ ] Firebase integration (login / add new build)
