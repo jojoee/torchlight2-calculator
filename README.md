@@ -15,32 +15,45 @@ Torchlight2 calculator
 - Template prefix: xh
 - 2 way data binding design
 - Reactive design
+- Maximum skill points: 133 [Ref 1](http://gaming.stackexchange.com/questions/85455/maximum-number-of-skill-points-you-can-have-in-torchlight-2)
+- `caches` for `ServiceWorker`
+- `localforage` for current data
 
 ## Issue
 ```
-`Scope` only
+Scope only
 - have 1 deep level
 - store number type (need to start with -1)
 ```
 
+## Browser compatibility
+- Chrome 52+
+
 ## Update
 - [ ] Coverage
-- [ ] Support PWA (Progressive web app)
-- [ ] Browser compatibility testing
+- [x] Support PWA (Progressive web app)
+- [x] Browser compatibility testing
 - [ ] Unit test
 - [ ] E2E test
+- [x] Lint
 - [ ] Demo page on `gh-pages` branch
 - [ ] Preset build
 - [ ] Screenshot
+- [ ] `min` and `max` attr of each prop (reactive)
+- [ ] Update realtime (currently using `setInterval` approach from [Watch.JS](https://github.com/melanke/Watch.JS))
 - [ ] Ribbon
 - [ ] Query string for class / stat / skill
 - [ ] Responsive
 - [ ] Fix all hacks
-- [ ] Recheck `skill.json`
+- [x] `manifest.json`
+- [ ] Update `skill.json`
 - [ ] Replace `bootstrap-grid` css with some source instead of github raw content
-- Firebase integration
-  - [ ] Login
-  - [ ] User can support own build
+- [ ] Firebase integration (login / add new build)
+- [ ] Implement [GoogleChrome/lighthouse](https://github.com/GoogleChrome/lighthouse)
+- [ ] Implement `promise` into all
+- [ ] Fetch hero builds from server
+- [ ] Icon
+- [ ] Icon meta
 
 ## Getting Started (dev)
 1. Install Node.js
@@ -55,6 +68,9 @@ Test: `yarn run test`
 ```
 
 ## Reference
-- Inspired and asset from: [ralrom/tl2-calculator](https://github.com/ralrom/tl2-calculator)
+- Inspired + asset + data
+  - [ralrom/tl2-calculator](https://github.com/ralrom/tl2-calculator)
+  - [TIDBI - Torchlight II Skill Calculator](https://tidbi.ru/eng/berserker.php)
+  - [Berserker Skills - Torchlight II Wiki Guide - IGN](http://www.ign.com/wikis/torchlight-2/Berserker_Skills)
 - Starter project: [jojoee/gulp-starter](https://github.com/jojoee/gulp-starter)
 - Template engine: [mustache](http://mustache.github.io/)
