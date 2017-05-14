@@ -1,0 +1,7 @@
+{
+  "name": "Torchlight 2 Skill & Stat Calculator",
+  "short_name": "Torchlight 2 Calculator",
+  "description": "Torchlight 2 Skill & Stat Calculator",
+  "display": "standalone",
+  "start_url": "/index.html"
+}
