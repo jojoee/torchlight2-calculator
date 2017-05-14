@@ -33,8 +33,9 @@
   "scripts": {
     "build": "gulp",
     "build.watch": "gulp && gulp watch",
+    "lint": "gulp lint",
     "test": "mocha test --reporter spec --recursive",
     "test.watch": "mocha test --reporter spec --recursive --watch",
-    "validate": "npm run build && npm run test"
+    "validate": "npm run build && npm run test && npm run lint"
   }
 }
