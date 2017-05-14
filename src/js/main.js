@@ -1,20 +1,3 @@
-var Bind = {
-
-  update: function(name, data) {
-    var $eles = $('[xbind="' + name + '"]'),
-      n = $eles.length,
-      i = 0;
-
-    if (n) {
-      for (i = 0; i < n; i++) {
-        // hack
-        $eles[i].value = data;
-        $eles[i].innerHTML = data;
-      }
-    }
-  }
-};
-
 var Skills;
 
 // app store
@@ -48,7 +31,124 @@ var ReactiveItems = [
   'skill',
 ];
 
-var Build = {
+// hero builds
+var Builds = [
+
+];
+
+var Config = {
+  store: {
+    prefix: 'tl2key-',
+  },
+};
+[
+  'scope',
+].forEach(function(key) {
+  Config.store[key] = Config.store.prefix + key;
+});
+
+/*================================================================ Watch
+*/
+
+var Bind = {
+
+  update: function(name, data) {
+    var $eles = $('[xbind="' + name + '"]'),
+      n = $eles.length,
+      i = 0;
+
+    if (n) {
+      for (i = 0; i < n; i++) {
+        // hack
+        $eles[i].value = data;
+        $eles[i].innerHTML = data;
+      }
+    }
+  }
+};
+
+function resetScope(val) {
+  for (var key in Scope) {
+    if (Scope.hasOwnProperty(key)) {
+      Scope[key] = val;
+    }
+  }
+}
+
+/**
+ * Assign value into Scope variable
+ * "tmp" variable have to has same structure as Scope
+ * 
+ * @param {Object} tmp
+ */
+function assignScope(tmp) {
+  for (var key in tmp) {
+    if (tmp.hasOwnProperty(key)) {
+      Scope[key] = tmp[key];
+    }
+  }
+}
+
+function updateScopeInputUi() {
+  for (var key in Scope) {
+    if (Scope.hasOwnProperty(key)) {
+      var data = Scope[key],
+        $ele = $('[xbind-input=' + key + ']');
+      $ele.val(data);
+    }
+  }
+}
+
+/**
+ * @example
+ * retruns stat
+ * statStrength
+ * @example
+ * retruns stat
+ * statDexterity
+ * @todo implement break
+ * @param {string} prop
+ * @returns {string}
+ */
+function getReactiveItem(prop) {
+  var result = '',
+    n = ReactiveItems.length,
+    i = 0;
+
+  for (i = 0; i < n; i++) {
+    var rec = ReactiveItems[i];
+
+    if (prop.length > rec.length &&
+      prop.indexOf(rec) === 0) {
+      result = rec;
+    }
+  }
+
+  return result;
+}
+
+/**
+ * @param {string} rec
+ */
+function updateReactiveItem(rec) {
+  var result = 0;
+
+  for (var prop in Scope) {
+    if (Scope.hasOwnProperty(prop)) {
+      if (prop.length > rec.length &&
+        prop.indexOf(rec) === 0) {
+        result += parseInt(Scope[prop]);
+      }
+    }
+  }
+
+  Scope[rec] = result;
+}
+
+/*================================================================ Template
+*/
+
+var Template = {
 
   render: function(templateSelector, items, targetSelector) {
     var source = $(templateSelector).html(),
@@ -133,74 +233,42 @@ var Build = {
   }
 };
 
-function resetScope() {
-  for (var key in Scope) {
-    if (Scope.hasOwnProperty(key)) {
-      Scope[key] = 0;
-    }
-  }
-}
+/*================================================================ App
+*/
 
 /**
- * @example
- * retruns stat
- * statStrength
- * @example
- * retruns stat
- * statDexterity
- * @todo implement break
- * @param {string} prop
- * @returns {string}
+ * Getch hero builds from server
+ * 
+ * @todo complete it
+ * @param {function} cb 
  */
-function getReactiveItem(prop) {
-  var result = '',
-    n = ReactiveItems.length,
-    i = 0;
+function getHeroBuilds(cb) {
+  // 1. Get data from cache
 
-  for (i = 0; i < n; i++) {
-    var rec = ReactiveItems[i];
+  // 2. Fetch new
 
-    if (prop.length > rec.length &&
-      prop.indexOf(rec) === 0) {
-      result = rec;
-    }
-  }
-
-  return result;
-}
-
-/**
- * @param {string} rec
- */
-function updateReactiveItem(rec) {
-  var result = 0;
-
-  for (var prop in Scope) {
-    if (Scope.hasOwnProperty(prop)) {
-      if (prop.length > rec.length &&
-        prop.indexOf(rec) === 0) {
-        result += parseInt(Scope[prop]);
-      }
-    }
-  }
-
-  Scope[rec] = result;
+  cb();
 }
 
 function init() {
-  Build.heroClass();
-  Build.heroStatus();
-  Build.heroSkill();
+  Template.heroClass();
+  Template.heroStatus();
+  Template.heroSkill();
 
   // start watch
   watch(Scope, function(prop, action, newValue) {
     var rec = getReactiveItem(prop);
 
-    Bind.update(prop, Scope[prop]);
-
+    Bind.update(prop, Scope[prop]);    
     if (rec) {
       updateReactiveItem(rec);
     }
+
+    localforage.setItem(Config.store.scope, Scope, function(err) {
+      if (err) {
+        console.log(err);
+      }
+    });
   });
 
   // watch input
@@ -219,10 +287,34 @@ function init() {
     }
   }
 
-  resetScope();
+  localforage.getItem(Config.store.scope, function(err, value) {
+    if (err) {
+      console.log(err);
+    }
+
+    // mark1
+    // due to we set -1
+    // we run this function to
+    // force update UI on init state
+    // console.log(value);
+    if (value) {
+      // need to re-assign
+      // instead of "Scope = value"
+      assignScope(value);
+      updateScopeInputUi();
+    } else {
+      resetScope(0);
+    }
+  });
 }
 
-$.getJSON(location.href + 'asset/skill.json', function(data) {
+$.getJSON(location.origin + '/asset/skill.json', function(data) {
   Skills = data;
-  init();
+
+  // need to assign value for "watch"
+  // and have to be -1 cause mark1
+  resetScope(-1);
+  getHeroBuilds(function() {
+    init();
+  });
 });
