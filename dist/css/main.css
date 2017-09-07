@@ -25,17 +25,17 @@ h1 {
 }
 
 #hero-switcher .class.berserker .image {
-  background-image: url("/asset/berserker/avatar.jpg");
+  background-image: url("../../asset/berserker/avatar.jpg");
 }
 
 #hero-switcher .class.embermage .image {
-  background-image: url("/asset/embermage/avatar.jpg");
+  background-image: url("../../asset/embermage/avatar.jpg");
 }
 
 #hero-switcher .class.engineer .image {
-  background-image: url("/asset/engineer/avatar.jpg");
+  background-image: url("../../asset/engineer/avatar.jpg");
 }
 
 #hero-switcher .class.outlander .image {
-  background-image: url("/asset/outlander/avatar.jpg");
+  background-image: url("../../asset/outlander/avatar.jpg");
 }

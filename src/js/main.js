@@ -308,7 +308,8 @@ function init() {
   });
 }
 
-$.getJSON(location.origin + '/asset/skill.json', function(data) {
+var skillJsonPath = location.origin + location.pathname + 'asset/skill.json'
+$.getJSON(skillJsonPath, function(data) {
   Skills = data;
 
   // need to assign value for "watch"
