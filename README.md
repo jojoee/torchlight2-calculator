@@ -1,5 +1,5 @@
 # torchlight2-calculator
-[![Build Status](https://travis-ci.org/jojoee/torchlight2-calculator.svg)](https://travis-ci.org/jojoee/torchlight2-calculator)
+[![Build Status](https://travis-ci.org/jojoee/torchlight2-calculator.svg)](https://travis-ci.org/jojoee/torchlight2-calculator) [![Greenkeeper badge](https://badges.greenkeeper.io/jojoee/torchlight2-calculator.svg)](https://greenkeeper.io/)
 
 Torchlight2 calculator
 
