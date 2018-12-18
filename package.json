@@ -15,20 +15,20 @@
   "homepage": "https://github.com/jojoee/torchlight2-calculator",
   "devDependencies": {
     "browser-sync": "^2.10.1",
-    "chai": "^3.5.0",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
+    "chai": "^4.2.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-concat": "^2.6.0",
     "gulp-if": "^2.0.2",
     "gulp-jshint": "^2.0.2",
-    "gulp-notify": "^2.2.0",
+    "gulp-notify": "^3.2.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
     "jshint": "^2.9.4",
     "jshint-stylish": "^2.2.1",
-    "mocha": "^2.5.3"
+    "mocha": "^5.2.0"
   },
   "scripts": {
     "build": "gulp",
